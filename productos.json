@@ -1,0 +1,85 @@
+{
+    "status": "success",
+    "items": [{
+            "codigo": 1,
+            "descripcion": "Chaleco Ambar",
+            "imagen": "images/chaleco_ambar.jpg",
+            "detalle": "Un ítem ideal para lograr un look relajado pero con onda. El chaleco sastrero ha sido confeccionado en tela rayón, con bolsillos ojales en el delantero y botones al tono. Hacé conjunto con: pantalón sastrero. <br><br> <b>Talles:</b> S, M, L, XL <br><br> <b>Colores disponibles:</b> violeta, celeste, rosa, beige, negro, rojo.",
+            "precio": 5500,
+            "category": "chaleco",
+            "puntuacion": "****"
+        },
+        {
+            "codigo": 2,
+            "descripcion": "Conjunto Crepe",
+            "imagen": "images/conjunto_crepe.jpg",
+            "detalle": "Conjunto estilo sastrero ideal para la temporada, que ofrece un look elegante y a la moda. Incluye pantalón pinzado con bolsillos laterales y cintura elástica, y blazer con bolsillos frontales, ambos confeccionados en rayón. <br><br> <b>Talles:</b> S, M, L <br><br> <b>Colores disponibles:</b> celeste, verde benetton, rosa, beige, negro.",
+            "precio": 12000,
+            "category": "conjunto",
+            "puntuacion": "****"
+        },
+        {
+            "codigo": 3,
+            "descripcion": "Mono Magnolia",
+            "imagen": "images/mono_magnolia.jpg",
+            "detalle": "El mono Magnolia es la elección perfecta: con botones y corte recto de pantalon, combina comodidad y tendencia en una sola prenda. El mono ha sido confeccionado en tela lino expandex. <br><br> <b>Talles:</b> S, M, L <br><br> <b>Colores disponibles:</b> celeste, rosa, beige, negro, rojo y verde militar.",
+            "precio": 8000,
+            "category": "mono",
+            "puntuacion": "****"
+        },
+        {
+            "codigo": 4,
+            "descripcion": "Pantalon Evangelina",
+            "imagen": "images/palanton_evangelina.jpg",
+            "detalle": "Pantalón holgado de tiro alto con bolsillos laterales y botón en la cintura. Está confeccionado en rústico foil negro, con un acabado brillante que le proporciona un look con onda, perfecto ya sea para una cena o una tarde de paseo. <br><br> <b>Talles:</b> S, M, L, XL <br><br> <b>Colores disponibles:</b>  camel, negro, rojo.",
+            "precio": 6800,
+            "category": "pantalon",
+            "puntuacion": "***"
+        },
+        {
+            "codigo": 5,
+            "descripcion": "Pantalon Sastrero",
+            "imagen": "images/pantalon_sastrero.jpg",
+            "detalle": "Un ítem ideal para lograr un look fresco y elegante. El pantalón sastrero pinzado viene con bolsillos y pasacinto. Está confeccionado en lino y algodón. Hacé conjunto con: chaleco sastrero. <br><br> <b>Talles:</b> S, M, L, XL <br><br> <b>Colores disponibles:</b> violeta, celeste, rosa, beige, negro, rojo.",
+            "precio": 7000,
+            "category": "pantalon",
+            "puntuacion": "***"
+        },
+        {
+            "codigo": 6,
+            "descripcion": "Musculosa Victoria",
+            "imagen": "images/remera_victoria.jpg",
+            "detalle": "La musculosa Victoria ha sido confeccionada en tela crep. El escote en V le da un toque femenino y delicado, perfecto para lucirse en cualquier ocasión. Ya sea para un brunch con amigas o una tarde de compras, esta musculosa le brinda versatilidad a tu armario. Hace juego con el pantalón Evangelina. <br><br> <b>Talles:</b> S, M, L<br><br> <b>Colores disponibles:</b> blanco, rosa, beige, negro, coral.",
+            "precio": 3500,
+            "category": "remera",
+            "puntuacion": "****"
+        },
+        {
+            "codigo": 7,
+            "descripcion": "Top Lazzie",
+            "imagen": "images/top_lazzie.jpg",
+            "detalle": "Un top fresco ideal para tus días de sol. El lino es el material perfecto para mantenerte fresca y con una onda relajada. Los breteles le dan un toque femenino y delicado, perfecto para lucirte en cualquier ocasión. Hace conjunto con: pantalon sastrero. <br><br> <b>Talles:</b> S, M, L <br><br> <b>Colores disponibles:</b> salmon, verde benetton, rosa, beige, negro.",
+            "precio": 2800,
+            "category": "top",
+            "puntuacion": "***"
+        },
+        {
+            "codigo": 8,
+            "descripcion": "Vestido Abby",
+            "imagen": "images/vestido_abby.jpg",
+            "detalle": "El vestido Abby es un modelo full print, corto, en cuello halter y está confeccionado en lino estampado. Así que si estás lista para sumar un toque chic y elegante a tu guardarropa, este vestido es definitivamente una elección ganadora. <br><br> <b>Talles:</b> S, M, L <br><br> <b>Colores disponibles:</b>  beige, negro, coral, blanco.",
+            "precio": 4500,
+            "category": "vestido",
+            "puntuacion": "****"
+        },
+        {
+            "codigo": 9,
+            "descripcion": "Vestido Eylen",
+            "imagen": "images/vestido_eylen.jpg",
+            "detalle": "El vestido Eylen confeccionado en crepp elastizado, un material que no solo se siente suave, sino que también es ligero y transpirable. Esta prenda está diseñada pensando en mujeres modernas como vos, que buscan combinar estilo y comodidad en su vida diaria. <br><br> <b>Talles:</b> S, M, L <br><br> <b>Colores disponibles:</b> blanco, rosa, beige, negro, rojo.",
+            "precio": 5300,
+            "category": "vestido",
+           "puntuacion": "*****"
+        }
+    ]
+}

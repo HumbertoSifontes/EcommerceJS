@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Daibelis Lopez" />
+    <meta name="description" content="Proyecto Final Ecommerce" />
+    <meta name="keywords" content="Ecommerce, tienda, Online" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>DaibeBoutique - Tienda de ropa</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+
+    <div id="particles-js"></div>
+    
+    <nav class="nav">
+      <div class="nav__center container">
+        <div class="nav__logo">
+          <h1>Daibe <span>Boutique</span></h1>
+        </div>
+        <ul class="nav__list">
+          <a href="#footer">
+            <span>
+              <i class='bx bxs-t-shirt' title="Contactanos"></i>
+            </span>
+          </a>
+          <div class="carrito__icon">
+            <i class="bx bx-cart"></i>
+            <span class="item__total">0</span>
+          </div>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <img src="images/carrusel_portada.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>¡LLEGÓ LA PRIMAVERA!</h5>
+            <p>Looks pensados para vos.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="images/carrusel_uno.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>"CELEBRÁ EL DÍA DE LA MADRE"</h5>
+            <p>Regalá una prenda Daibe a ese ser tan especial.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="images/carrusel_dos.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>NUEVA COLECCIÓN VERANO 24</h5>
+            <p>Mirá las nuevas tendencias.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section class="filter">
+      <div class="grid">
+        <div class="div">
+          <label for="buscar"
+            ><span><i class="bx bx-search"></i></span
+          ></label>
+          <input type="text" id="buscar" placeholder="Buscar productos..." />
+        </div>
+        <div class="category">
+          <select id="category" onclick="categoryValue()">
+            <option value="">Modelos</option>
+            <option value="chaleco">Chaleco</option>
+            <option value="conjunto">Conjunto</option>
+            <option value="mono">Mono</option>
+            <option value="pantalon">Pantalon</option>
+            <option value="musculosa">Musculosa</option>
+            <option value="top">Top</option>
+            <option value="vestido">Vestido</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="productos">
+      <div class="productos__center">
+
+        <!-- <div class="producto">
+          <div class="image__container">
+            <img src="images/chaleco_ambar.jpg" alt="" />
+          </div>
+          <div class="producto__footer">
+            <h1>Chaleco Ambar </h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$2200.00</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <a href="#" class="btn addToCart">Añadir carrito</a>
+              <a href="producto-detalles.html" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="producto">
+          <div class="image__container">
+            <img src="images/conjunto_crepe.jpg" alt="" />
+          </div>
+          <div class="producto__footer">
+            <h1>Conjunto Crepe </h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$2200.00</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <a href="#" class="btn addToCart">Añadir carrito</a>
+              <a href="producto-detalles.html" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="producto">
+          <div class="image__container">
+            <img src="images/mono_magnolia.jpg" alt="" />
+          </div>
+          <div class="producto__footer">
+            <h1>Mono Magnolia </h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$2200.00</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <a href="#" class="btn addToCart">Añadir carrito</a>
+              <a href="producto-detalles.html" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="producto">
+          <div class="image__container">
+            <img src="images/palanton_evangelina.jpg" alt="" />
+          </div>
+          <div class="producto__footer">
+            <h1>Pantalon Evangelina </h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$2200.00</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <a href="#" class="btn addToCart">Añadir carrito</a>
+              <a href="producto-detalles.html" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="producto">
+          <div class="image__container">
+            <img src="images/pantalon_sastrero.jpg" alt="" />
+          </div>
+          <div class="producto__footer">
+            <h1>Pantalon Sastrero </h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$2200.00</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <a href="#" class="btn addToCart">Añadir carrito</a>
+              <a href="producto-detalles.html" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="producto">
+          <div class="image__container">
+            <img src="images/remera_victoria.jpg" alt="" />
+          </div>
+          <div class="producto__footer">
+            <h1>Remera Victoria </h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$2200.00</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <a href="#" class="btn addToCart">Añadir carrito</a>
+              <a href="producto-detalles.html" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="producto">
+          <div class="image__container">
+            <img src="images/top_lazzie.jpg" alt="" />
+          </div>
+          <div class="producto__footer">
+            <h1>Top Lazzie </h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$2200.00</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <a href="#" class="btn addToCart">Añadir carrito</a>
+              <a href="producto-detalles.html" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="producto">
+          <div class="image__container">
+            <img src="images/vestido_abby.jpg" alt="" />
+          </div>
+          <div class="producto__footer">
+            <h1>Vestido Abby </h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$2200.00</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <a href="#" class="btn addToCart">Añadir carrito</a>
+              <a href="producto-detalles.html" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="producto">
+          <div class="image__container">
+            <img src="images/vestido_eylen.jpg" alt="" />
+          </div>
+          <div class="producto__footer">
+            <h1>Vestido Eylen </h1>
+            <div class="rating">
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bxs-star"></i>
+              </span>
+              <span>
+                <i class="bx bx-star"></i>
+              </span>
+            </div>
+            <div class="price">$2200.00</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <a href="#" class="btn addToCart">Añadir carrito</a>
+              <a href="producto-detalles.html" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <section class="carrito__overlay">
+      <div class="carrito">
+        <span class="close__carrito">
+          <i class="bx bx-x"></i>
+        </span>
+        <h1>Su Carrito</h1>
+
+        <div class="carrito__center">
+          <!-- <div class="carrito__item">
+            <img src="images/chaleco_ambar.jpg" alt="reloj" />
+            <div>
+              <h3>Chaleco Ambar</h3>
+              <p class="price">2200</p>
+            </div>
+            <div>
+              <span>
+                <i class="bx bxs-up-arrow"></i>
+              </span>
+              <p>1</p>
+              <span>
+                <i class="bx bxs-down-arrow"></i>
+              </span>
+            </div>
+            <div>
+              <span class="remove__item">
+                <i class="bx bx-trash"></i>
+              </span>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="carrito__footer">
+          <h3>Total: $ <span class="carrito__total">0</span></h3>
+          <button class="clear__carrito btn">remover carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <section class="section-padding footer" id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-6 col-lg-4 redes">
+              <div>
+                <h3>Redes Sociales</h3>
+              </div>
+              <div class="row sociales">
+                <a href="https://www.facebook.com/" target="_blank">
+                  <img src="images/facebook.png" alt="facebook" id="facebook" />
+                </a>
+              </div>
+              <div class="row sociales">
+                <a href="https://www.instagram.com/" target="_blank">
+                  <img src="images/instagram.png" alt="instagram" id="instragam" />
+                </a>
+              </div>
+              <div class="row sociales">
+                <a href="https://www.twitter.com/" target="_blank">
+                  <img src="images/twitter.png" alt="twitter" id="twitter" />
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-4 mapa">
+              <div>
+                  <h3>Local</h3>
+              </div>
+              <div class="mapouter">
+                  <div class="gmap_canvas">
+                      <iframe class="container-fluid"
+                          width="122"
+                          height="97"
+                          id="gmap_canvas"
+                          src="https://maps.google.com/maps?q=devoto+school&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                          frameborder="0"
+                          scrolling="no"
+                          marginheight="0"
+                          marginwidth="0">
+                      </iframe>
+                      <a href="https://online-timer.me/"></a>
+                      <br />
+                      <a href="https://timenowin.net/"></a>
+                      <br />
+                      <style>
+                          .mapouter {
+                          position: relative;
+                          text-align: right;
+                          height: 97px;
+                          width: 122px;
+                          }
+                      </style>
+                      <a href="https://www.embedmaps.co">embed google maps api</a>
+                      <style>
+                          .gmap_canvas {
+                          overflow: hidden;
+                          background: none !important;
+                          height: 97px;
+                          width: 122px;
+                          }
+                      </style>
+                  </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4">
+              <div>
+                <h3>Contacto</h3>
+              </div>
+              <div class="noPadding">
+                <p><b>Email</b>: daibeboutique@ecommerce.com</p>
+                <p><b>Telefono</b>: 2483456</h>
+                <p><b>Whatsapp</b>: 1109876543</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="particles.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
